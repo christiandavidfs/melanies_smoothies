@@ -27,6 +27,12 @@ ingredients_list = st.multiselect (
     , max_selections=5
 )
 
+#new section
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+st.text(fruityvice_response)
+
+
 if ingredients_list:
 
 
